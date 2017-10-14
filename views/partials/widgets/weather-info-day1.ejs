@@ -1,0 +1,23 @@
+<% let days = listGroupedByDay %>
+<% let dayIndex = 0 %>
+<% let currentWeatherObject = listGroupedByDay[dayIndex] %>
+
+<div class="container">
+    <% currentWeatherObject.elements.forEach(function(el) { %>
+        <div class="row">
+        <div class="col">
+            <p><%= el.dt_txt.slice(11,16) %></p>
+        </div>
+        <div lass="col">
+            <p><%= el.weather[0].description %></p>
+        </div>
+        <div class="col">
+            <p><%= el.main.temp_max %></p>
+        </div>
+        <div class="col">
+            <p><%= el.main.temp_min %></p>
+        </div>
+    </div>
+    <% }); %>
+</div>
+
