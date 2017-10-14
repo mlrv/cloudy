@@ -1,0 +1,17 @@
+<div id="city-form">
+    <div class="row">
+        <div class="col">
+            <fieldset>
+                <form action="/" method="post">
+                    <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+                    <input type="submit" class="ghost-button" value="Get Weather">
+                </form>
+                <% if(error !== null){ %>
+                            <p>
+                                <%= error %>
+                            </p>
+                            <% } %>
+            </fieldset>
+        </div>
+    </div>
+</div>
