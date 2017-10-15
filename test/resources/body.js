@@ -1,3 +1,4 @@
+// Example response from the OpenWeatherMap API
 module.exports = {
     "cod": "200",
     "message": 0.0042,
